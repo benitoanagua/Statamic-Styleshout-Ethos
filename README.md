@@ -4,37 +4,49 @@
 
 Statamic 3 is the flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.
 
-> **Note:** This repository contains the code for the Statamic application. To contribute to the core package, visit the [Statamic core package repository][cms-repo].
+## Creating a new Statamic project?
 
+**Via Statamic CLI Installer** (preferred method)
 
-## Learning Statamic
+```bash
+composer global require statamic/cli
+```
 
-Statamic 3 has extensive [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, feel free to open issues for anything you find confusing or incomplete. We are happy to consider anything you feel will make the docs and CMS better.
+**Once installed**, run the following command to kickstart a fresh new Statamic project (and even choose from some free Starter Kits).
 
-## Support
+```bash
+statamic new {site_name}
+```
 
-We provide official developer support on [Statamic 3 Pro](https://statamic.com/pricing) projects. Community-driven support is available on the [forum](https://statamic.com/forum) and in [Discord][discord].
+or you can clone this project
 
+```bash
+git clone https://github.com/benitoanagua/statamic-styleshout-ethos.git
+```
 
-## Contributing
+## Next Steps
 
-Thank you for considering contributing to Statamic! We simply ask that you review the [contribution guide][contribution] before you open issues or send pull requests.
+```bash
+cd site_name/public
+php -S localhost:3000
+```
 
+Want to jump right in? You can create a user by running
 
-## Code of Conduct
+```bash
+php please make:user
+```
 
-In order to ensure that the Statamic community is welcoming to all and generally a rad place to belong, please review and abide by the [Code of Conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).
-
+Now heading to [localhost:3000/cp](http://localhost:3000/cp "Control Panel").
 
 ## Important Links
 
-- [Statamic Main Site](https://statamic.com)
-- [Statamic 3 Documentation][docs]
-- [Statamic 3 Core Package Repo][cms-repo]
-- [Statamic 3 Migrator](https://github.com/statamic/migrator)
-- [Statamic Discord][discord]
+-   [Statamic Main Site](https://statamic.com)
+-   [Statamic 3 Documentation][docs]
+-   [Statamic 3 Core Package Repo][cms-repo]
+-   [Statamic 3 Migrator](https://github.com/statamic/migrator)
+-   [Statamic Discord][discord]
 
 [docs]: https://statamic.dev/
 [discord]: https://statamic.com/discord
-[contribution]: https://github.com/statamic/cms/blob/master/CONTRIBUTING.md
 [cms-repo]: https://github.com/statamic/cms
