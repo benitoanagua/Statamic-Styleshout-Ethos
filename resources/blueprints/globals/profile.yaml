@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: description
+        field:
+          theme: light
+          mode: htmlmixed
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: Description
+          type: code
+          icon: code
+          listable: hidden
