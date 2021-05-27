@@ -1,16 +1,78 @@
-<!doctype html>
-<html lang="{{ site:short_locale }}">
+<!DOCTYPE html>
+<html class="no-js" lang="{{ site:short_locale }}">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
         <title>{{ title ?? site:name }}</title>
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-    </head>
-    <body class="bg-gray-100 font-sans leading-normal text-grey-800">
-        <div class="mx-auto px-2 h-screen flex items-center justify-center">
-            {{ template_content }}
-        </div>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="{{ mix src='css/site.css' }}" />
         <script src="{{ mix src='/js/site.js' }}"></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+        <link rel="manifest" href="site.webmanifest" />
+    </head>
+    <body id="top">
+        <div id="preloader">
+            <div id="loader" class="dots-fade">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <header class="s-header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Homepage" />
+                </a>
+            </div>
+
+            <div class="header-content">
+                <nav class="row header-nav-wrap">
+                    <ul class="header-nav">
+                        {{ nav:main_nav }}
+                        <li>
+                            <a
+                                class="smoothscroll"
+                                href="{{ url }}"
+                                title="{{title}}"
+                                >{{ title }}</a
+                            >
+                        </li>
+                        {{ /nav:main_nav }}
+                    </ul>
+                </nav>
+                <!-- end header-nav-wrap -->
+
+                <a href="#0" class="btn btn--stroke btn--small">Download CV</a>
+            </div>
+            <!-- end header-content -->
+
+            <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+        </header>
+
+        <div>{{ template_content }}</div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
