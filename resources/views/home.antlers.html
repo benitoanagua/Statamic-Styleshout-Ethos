@@ -129,7 +129,7 @@
                         <h5>{{ title }}</h5>
                     </div>
                     <div class="services-list__item-body">
-                        <p>{{ content }}</p>
+                        <p>{{ content | raw }}</p>
                     </div>
                 </li>
                 {{ /collection:expertise }}
@@ -137,3 +137,5 @@
         </div>
     </div>
 </section>
+
+{{ partial:sections/portfolio }} {{ partial:sections/photoswipe }}

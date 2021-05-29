@@ -1,0 +1,94 @@
+title: Portfolio
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: category
+        field:
+          type: terms
+          taxonomies:
+            - category
+          display: Category
+          mode: select
+      -
+        handle: project
+        field:
+          input_type: text
+          antlers: false
+          display: Project
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: link
+        field:
+          display: Link
+          type: link
+          icon: link
+          listable: hidden
+  picture:
+    display: Picture
+    fields:
+      -
+        handle: full
+        field:
+          mode: grid
+          container: assets
+          folder: portfolio/gallery
+          restrict: false
+          allow_uploads: true
+          display: Full
+          type: assets
+          icon: assets
+          listable: hidden
+          max_files: 1
+      -
+        handle: normal
+        field:
+          mode: grid
+          container: assets
+          folder: portfolio
+          restrict: false
+          allow_uploads: true
+          display: Normal
+          type: assets
+          icon: assets
+          listable: hidden
+          max_files: 1
+      -
+        handle: retina
+        field:
+          mode: grid
+          container: assets
+          folder: portfolio
+          restrict: false
+          allow_uploads: true
+          display: Retina
+          type: assets
+          icon: assets
+          listable: hidden
+          max_files: 1
