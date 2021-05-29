@@ -1,0 +1,31 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: button
+        field:
+          input_type: text
+          antlers: false
+          display: Button
+          type: text
+          icon: text
+          listable: hidden

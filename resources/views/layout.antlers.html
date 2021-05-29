@@ -38,38 +38,7 @@
             </div>
         </div>
 
-        <header class="s-header">
-            <div class="header-logo">
-                <a href="index.html">
-                    <img src="img/logo.svg" alt="Homepage" />
-                </a>
-            </div>
-
-            <div class="header-content">
-                <nav class="row header-nav-wrap">
-                    <ul class="header-nav">
-                        {{ nav:main_nav }}
-                        <li>
-                            <a
-                                class="smoothscroll"
-                                href="{{ url }}"
-                                title="{{title}}"
-                                >{{ title }}</a
-                            >
-                        </li>
-                        {{ /nav:main_nav }}
-                    </ul>
-                </nav>
-                <!-- end header-nav-wrap -->
-
-                <a href="#0" class="btn btn--stroke btn--small">Download CV</a>
-            </div>
-            <!-- end header-content -->
-
-            <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-        </header>
-
-        <div>{{ template_content }}</div>
+        {{ partial:header }} {{ template_content }} {{ partial:footer }}
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
