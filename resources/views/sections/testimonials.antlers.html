@@ -1,0 +1,44 @@
+<section id="testimonials" class="s-testimonials">
+    <div class="row collapse">
+        <div class="column large-full">
+            <div class="testimonial-slider" data-aos="fade-up">
+                {{ collection:testimonials sort="order" }}
+                <div class="testimonial-slider__slide">
+                    <p>{{ content | raw }}</p>
+                    <div class="testimonial-slider__author">
+                        <img
+                            src="{{ avatar }}"
+                            alt="{{ title }}"
+                            class="testimonial-slider__avatar"
+                        />
+                        <cite class="testimonial-slider__cite">
+                            <strong>{{ title }}</strong>
+                            <span>{{ company }}</span>
+                        </cite>
+                    </div>
+                </div>
+                {{ /collection:testimonials }}
+            </div>
+        </div>
+    </div>
+
+    <div class="s-cta">
+        <div class="row">
+            <div class="column large-full">
+                <h2 class="section-desc" data-aos="fade-up">
+                    {{ call_to_action:title }}
+                </h2>
+            </div>
+        </div>
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column large-full">
+                {{ call_to_action:content }}
+                <a
+                    href="{{ call_to_action:link }}"
+                    class="btn btn--primary h-full-width"
+                    >{{ call_to_action:button }}</a
+                >
+            </div>
+        </div>
+    </div>
+</section>

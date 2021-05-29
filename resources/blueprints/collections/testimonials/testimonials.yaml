@@ -1,0 +1,50 @@
+title: Testimonials
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: avatar
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Avatar
+          type: assets
+          icon: assets
+          listable: hidden
+          container: assets
+          folder: avatars
+      -
+        handle: company
+        field:
+          input_type: text
+          antlers: false
+          display: Company
+          type: text
+          icon: text
+          listable: hidden
