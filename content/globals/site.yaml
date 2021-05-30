@@ -1,0 +1,11 @@
+title: Site
+data:
+  author: 'John Doe'
+  description: 'Hello, I''m John Doe, a frontend developer & designer currently based somewhere.'
+  logo: logo.svg
+  android_chrome_192: android-chrome-192x192.png
+  android_chrome_512: android-chrome-512x512.png
+  apple_touch_icon: apple-touch-icon.png
+  favicon_16: favicon-16x16.png
+  favicon_32: favicon-32x32.png
+  favicon: favicon.ico

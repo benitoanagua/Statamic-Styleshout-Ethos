@@ -1,7 +1,7 @@
 <header class="s-header">
     <div class="header-logo">
         <a href="index.html">
-            <img src="img/logo.svg" alt="Homepage" />
+            <img src="{{ site:logo }}" alt="Homepage" />
         </a>
     </div>
 
@@ -17,11 +17,11 @@
                 {{ /nav:main_nav }}
             </ul>
         </nav>
-        <!-- end header-nav-wrap -->
-
-        <a href="#0" class="btn btn--stroke btn--small">Download CV</a>
+        <a
+            href="{{ profile:curriculum_vitae }}"
+            class="btn btn--stroke btn--small"
+            >{{ profile:button }}</a
+        >
     </div>
-    <!-- end header-content -->
-
     <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
 </header>
