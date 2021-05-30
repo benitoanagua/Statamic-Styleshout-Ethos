@@ -1,0 +1,119 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: author
+        field:
+          input_type: text
+          antlers: false
+          display: Author
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: description
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Description
+          type: markdown
+          icon: markdown
+          listable: hidden
+      -
+        handle: logo
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+  image:
+    display: Image
+    fields:
+      -
+        handle: android_chrome_192
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Android Chrome 192'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: android_chrome_512
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Android Chrome 512'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: apple_touch_icon
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Apple Touch Icon'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: favicon_16
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Favicon 16'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: favicon_32
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Favicon 32'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: favicon
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Favicon
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33

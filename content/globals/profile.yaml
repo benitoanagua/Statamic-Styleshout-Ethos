@@ -1,7 +1,7 @@
 title: Profile
 data:
-  description: |-
-    Hello, I'm John Doe, <br>
-    a frontend developer <br>
-    & designer currently <br>
-    based somewhere.
+  hero: profile/hero-bg-3000.jpg
+  button: 'Download CV'
+  curriculum_vitae: profile/stop-cv-format.pdf
+  profile: profile/profile-pic.jpg
+  profile_retina: profile/profile-pic@2x.jpg

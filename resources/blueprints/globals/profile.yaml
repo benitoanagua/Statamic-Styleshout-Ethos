@@ -3,16 +3,66 @@ sections:
     display: Main
     fields:
       -
-        handle: description
+        handle: hero
         field:
-          theme: light
-          mode: htmlmixed
-          indent_type: tabs
-          indent_size: 4
-          key_map: default
-          line_numbers: true
-          line_wrapping: true
-          display: Description
-          type: code
-          icon: code
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Hero
+          type: assets
+          icon: assets
           listable: hidden
+          folder: profile
+      -
+        handle: button
+        field:
+          input_type: text
+          antlers: false
+          display: Button
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: curriculum_vitae
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Curriculum Vitae'
+          type: assets
+          icon: assets
+          listable: hidden
+          folder: profile
+  picture:
+    display: Picture
+    fields:
+      -
+        handle: profile
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Profile
+          type: assets
+          icon: assets
+          listable: hidden
+          folder: profile
+      -
+        handle: profile_retina
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Profile Retina'
+          type: assets
+          icon: assets
+          listable: hidden
+          folder: profile
