@@ -39,6 +39,15 @@ php please make:user
 
 Now heading to [localhost:3000/cp](http://localhost:3000/cp "Control Panel").
 
+## Static site generator
+
+```bash
+composer require statamic/ssg
+php please ssg:generate
+```
+
+The official Statamic 3 [static site generator package](https://github.com/statamic/ssg).
+
 ## Important Links
 
 -   [Statamic Main Site](https://statamic.com)
