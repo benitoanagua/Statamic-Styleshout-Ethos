@@ -1,38 +1,25 @@
-<section
-    id="hero"
-    class="s-hero target-section"
-    data-parallax="scroll"
-    data-image-src="{{ profile:hero }}"
-    data-natural-width="3000"
-    data-natural-height="2000"
-    data-position-y="center"
->
-    <div class="row hero-content">
-        <div class="column large-full">
-            {{ collection:sections title:starts_with="Hero"}}
-            <h1>{{ extract | raw }}</h1>
+<section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="{{ profile:hero }}" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+	<div class="row hero-content">
+		<div class="column large-full">
+			{{ collection:sections title:starts_with="Hero"}}
+			<h1>{{ extract | raw }}</h1>
 
-            <ul class="hero-social">
-                {{ nav:social_nav }}
-                <li>
-                    <a href="{{ url }}" title="{{title}}">{{ title }}</a>
-                </li>
-                {{ /nav:social_nav }}
-            </ul>
-            {{ /collection:sections }}
-        </div>
-    </div>
+			<ul class="hero-social">
+				{{ nav:social_nav }}
+				<li>
+					<a href="{{ url }}" title="{{title}}">{{ title }}</a>
+				</li>
+				{{ /nav:social_nav }}
+			</ul>
+			{{ /collection:sections }}
+		</div>
+	</div>
 
-    <div class="hero-scroll">
-        <a href="#about" class="scroll-link smoothscroll">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-            >
-                <path d="M12 24l-8-9h6v-15h4v15h6z" />
-            </svg>
-        </a>
-    </div>
+	<div class="hero-scroll">
+		<a href="#about" class="scroll-link smoothscroll">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+				<path d="M12 24l-8-9h6v-15h4v15h6z"/>
+			</svg>
+		</a>
+	</div>
 </section>

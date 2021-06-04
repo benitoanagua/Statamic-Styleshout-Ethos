@@ -1,34 +1,32 @@
 <section id="services" class="s-services target-section h-dark-bg">
-    <div class="row s-services__content">
-        <div class="vert-line"></div>
+	<div class="row s-services__content">
+		<div class="vert-line"></div>
 
-        <div class="column large-6 s-services__leftcol">
-            {{ collection:sections title:starts_with="Expertise"}}
-            <div class="section-intro" data-num="02" data-aos="fade-up">
-                <h3 class="subhead">{{ title }}</h3>
+		<div class="column large-6 s-services__leftcol">
+			{{ collection:sections title:starts_with="Expertise"}}
+			<div class="section-intro" data-num="02" data-aos="fade-up">
+				<h3 class="subhead">{{ title }}</h3>
 
-                <h1 class="display-1">{{ extract }}</h1>
-            </div>
+				<h1 class="display-1">{{ extract }}</h1>
+			</div>
 
-            <p class="lead" data-aos="fade-up">{{ content | raw }}</p>
-            {{ /collection:sections }}
-        </div>
+			<p class="lead" data-aos="fade-up">{{ content | raw }}</p>
+			{{ /collection:sections }}
+		</div>
 
-        <div class="column large-6">
-            <ul class="services-list" data-aos="fade-up">
-                {{ collection:expertise sort="order" }}
-                <li
-                    class="services-list__item {{ if index == 0 }}is-active{{ /if }}"
-                >
-                    <div class="services-list__item-header">
-                        <h5>{{ title }}</h5>
-                    </div>
-                    <div class="services-list__item-body">
-                        <p>{{ content | raw }}</p>
-                    </div>
-                </li>
-                {{ /collection:expertise }}
-            </ul>
-        </div>
-    </div>
+		<div class="column large-6">
+			<ul class="services-list" data-aos="fade-up">
+				{{ collection:expertise sort="order" }}
+				<li class="services-list__item {{ if index == 0 }}is-active{{ /if }}">
+					<div class="services-list__item-header">
+						<h5>{{ title }}</h5>
+					</div>
+					<div class="services-list__item-body">
+						<p>{{ content | raw }}</p>
+					</div>
+				</li>
+				{{ /collection:expertise }}
+			</ul>
+		</div>
+	</div>
 </section>

@@ -1,50 +1,38 @@
 <section id="portfolio" class="s-portfolio target-section">
-    <div class="row s-portfolio__header">
-        <div class="column large-6 medium-8 tab-full">
-            {{ collection:sections title:starts_with="Portfolio"}}
-            <div class="section-intro" data-num="03" data-aos="fade-up">
-                <h3 class="subhead">{{ title }}</h3>
-                <h1 class="display-1">{{ extract }}</h1>
-            </div>
-            {{ /collection:sections }}
-        </div>
-    </div>
+	<div class="row s-portfolio__header">
+		<div class="column large-6 medium-8 tab-full">
+			{{ collection:sections title:starts_with="Portfolio"}}
+			<div class="section-intro" data-num="03" data-aos="fade-up">
+				<h3 class="subhead">{{ title }}</h3>
+				<h1 class="display-1">{{ extract }}</h1>
+			</div>
+			{{ /collection:sections }}
+		</div>
+	</div>
 
-    <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
-        {{ collection:portfolio sort="order" }}
-        <div class="column" data-aos="fade-up">
-            <div class="folio-item">
-                <div class="folio-item__thumb">
-                    <a
-                        class="folio-item__thumb-link"
-                        href="{{ full }}"
-                        title="{{ title }}"
-                        data-size="1050x700"
-                    >
-                        <img
-                            src="{{ normal }}"
-                            srcset="{{ normal }} 1x, {{ retina }} 2x"
-                            alt=""
-                        />
-                    </a>
-                </div>
-                <div class="folio-item__info">
-                    <div class="folio-item__cat">
-                        {{ category }} {{ title }} {{ /category }}
-                    </div>
-                    <h4 class="folio-item__title">{{ title }}</h4>
-                </div>
-                <a
-                    href="{{ link }}"
-                    title="{{ project }}"
-                    class="folio-item__project-link"
-                    >{{ project }}</a
-                >
-                <div class="folio-item__caption">
-                    <p>{{ content | raw }}</p>
-                </div>
-            </div>
-        </div>
-        {{ /collection:portfolio }}
-    </div>
+	<div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+		{{ collection:portfolio sort="order" }}
+		<div class="column" data-aos="fade-up">
+			<div class="folio-item">
+				<div class="folio-item__thumb">
+					<a class="folio-item__thumb-link" href="{{ full }}" title="{{ title }}" data-size="1050x700">
+						<img src="{{ normal }}" srcset="{{ normal }} 1x, {{ retina }} 2x" alt=""/>
+					</a>
+				</div>
+				<div class="folio-item__info">
+					<div class="folio-item__cat">
+						{{ category }}
+						{{ title }}
+						{{ /category }}
+					</div>
+					<h4 class="folio-item__title">{{ title }}</h4>
+				</div>
+				<a href="{{ link }}" title="{{ project }}" class="folio-item__project-link">{{ project }}</a>
+				<div class="folio-item__caption">
+					<p>{{ content | raw }}</p>
+				</div>
+			</div>
+		</div>
+		{{ /collection:portfolio }}
+	</div>
 </section>

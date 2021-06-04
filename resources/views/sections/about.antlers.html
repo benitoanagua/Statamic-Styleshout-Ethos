@@ -1,61 +1,58 @@
 <section id="about" class="s-about target-section">
-    <div class="s-about__section s-about__section--profile">
-        <div class="right-vert-line"></div>
+	<div class="s-about__section s-about__section--profile">
+		<div class="right-vert-line"></div>
 
-        <div class="row">
-            <div class="column large-6 medium-8 tab-full">
-                {{ collection:sections title:starts_with="About"}}
-                <div class="section-intro" data-num="01" data-aos="fade-up">
-                    <h3 class="subhead">{{ title }}</h3>
-                    <h1 class="display-1">{{ extract }}</h1>
-                </div>
+		<div class="row">
+			<div class="column large-6 medium-8 tab-full">
+				{{ collection:sections title:starts_with="About"}}
+				<div class="section-intro" data-num="01" data-aos="fade-up">
+					<h3 class="subhead">{{ title }}</h3>
+					<h1 class="display-1">{{ extract }}</h1>
+				</div>
 
-                <div class="profile-pic" data-aos="fade-up">
-                    <img
-                        src="{{ profile:profile }}"
-                        srcset="
-                        {{ profile:profile }}  1x,
-                        {{ profile:profile_retina }} 2x
-                        "
-                        alt=""
-                    />
-                </div>
+				<div class="profile-pic" data-aos="fade-up">
+					<img src="{{ profile:profile }}" srcset="{{ profile:profile }} 1x, {{ profile:profile_retina }} 2x" alt=""/>
+				</div>
 
-                <h3 data-aos="fade-up">{{ subtitle }}</h3>
+				<h3 data-aos="fade-up">{{ subtitle }}</h3>
 
-                <p data-aos="fade-up">{{ content | raw }}</p>
-                {{ /collection:sections }}
-            </div>
-        </div>
-    </div>
+				<p data-aos="fade-up">{{ content | raw }}</p>
+				{{ /collection:sections }}
+			</div>
+		</div>
+	</div>
 
-    <div class="s-about__section">
-        <div class="row">
-            <div class="column">
-                <h3 data-aos="fade-up">Career</h3>
-            </div>
-        </div>
+	<div class="s-about__section">
+		<div class="row">
+			<div class="column">
+				<h3 data-aos="fade-up">Career</h3>
+			</div>
+		</div>
 
-        <div class="row block-large-1-2 block-900-full work-positions">
-            {{ collection:career sort="order" }}
-            <div class="column" data-aos="fade-up">
-                <div class="position">
-                    <div class="position__header">
-                        <h6>
-                            <span class="position__co">{{ title }}</span>
-                            <span class="position__pos">{{ position }}</span>
-                        </h6>
-                        <div class="position__timeframe">
-                            {{ start_date format="F Y" }} - {{ if first
-                            }}Present{{ else }}{{ end_date format="F Y" }}{{ /if
+		<div class="row block-large-1-2 block-900-full work-positions">
+			{{ collection:career sort="order" }}
+			<div class="column" data-aos="fade-up">
+				<div class="position">
+					<div class="position__header">
+						<h6>
+							<span class="position__co">{{ title }}</span>
+							<span class="position__pos">{{ position }}</span>
+						</h6>
+						<div class="position__timeframe">
+							{{ start_date format="F Y" }}
+							-
+							{{ if first
+                            }}Present
+							{{ else }}
+								{{ end_date format="F Y" }}{{ /if
                             }}.
-                        </div>
-                    </div>
-                    {{ order_type }}
-                    <p>{{ content | raw }}</p>
-                </div>
-            </div>
-            {{ /collection:career }}
-        </div>
-    </div>
-</section>
+							</div>
+						</div>
+						{{ order_type }}
+						<p>{{ content | raw }}</p>
+					</div>
+				</div>
+				{{ /collection:career }}
+			</div>
+		</div>
+	</section>

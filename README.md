@@ -4,36 +4,21 @@
 
 Statamic 3 is the flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.
 
-## Creating a new Statamic project?
+## Quick Start
 
-**Via Statamic CLI Installer** (preferred method)
+**1. Create a new site** cloning the repo and removing the origin repo.
 
-```bash
-composer global require statamic/cli
+```
+git clone https://github.com/benitoanagua/Statamic-Styleshout-Ethos ethos
+cd ethos
+composer install
+cp .env.example .env && php artisan key:generate
+php -S localhost:3000 -t public
 ```
 
-**Once installed**, run the following command to kickstart a fresh new Statamic project (and even choose from some free Starter Kits).
+**2. Make a new user** – you'll want it to be a `super` so you have access to everything.
 
-```bash
-statamic new {site_name}
 ```
-
-or you can clone this project
-
-```bash
-git clone https://github.com/benitoanagua/statamic-styleshout-ethos.git
-```
-
-## Next Steps
-
-```bash
-cd site_name/public
-php -S localhost:3000
-```
-
-Want to jump right in? You can create a user by running
-
-```bash
 php please make:user
 ```
 

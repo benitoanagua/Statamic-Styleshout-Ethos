@@ -1,77 +1,63 @@
 <footer class="s-footer h-dark-bg">
-    <div class="right-vert-line"></div>
+	<div class="right-vert-line"></div>
 
-    <div class="row s-footer__main">
-        <div class="column large-6">
-            {{ collection:sections title:starts_with="Get"}}
-            <div class="section-intro" data-aos="fade-up">
-                <h3 class="subhead">{{ title }}</h3>
+	<div class="row s-footer__main">
+		<div class="column large-6">
+			{{ collection:sections title:starts_with="Get"}}
+			<div class="section-intro" data-aos="fade-up">
+				<h3 class="subhead">{{ title }}</h3>
 
-                <h1 class="display-1">{{ extract }}</h1>
-            </div>
-            {{ /collection:sections }}
-            <div class="footer-email-us">
-                <a
-                    href="mailto:{{ contact:email }}"
-                    class="btn btn--primary h-full-width"
-                    >{{ contact:button }}</a
-                >
-            </div>
-        </div>
+				<h1 class="display-1">{{ extract }}</h1>
+			</div>
+			{{ /collection:sections }}
+			<div class="footer-email-us">
+				<a href="mailto:{{ contact:email }}" class="btn btn--primary h-full-width">{{ contact:button }}</a>
+			</div>
+		</div>
 
-        <div class="column large-5">
-            <div class="footer-contacts">
-                <div class="footer-contact-block" data-aos="fade-up">
-                    <h5 class="footer-contact-block__header">Email</h5>
-                    <p class="footer-contact-block__content">
-                        <a href="mailto:{{ contact:email }}"
-                            >{{ contact:email }}</a
-                        >
-                    </p>
-                </div>
-                <div class="footer-contact-block" data-aos="fade-up">
-                    <h5 class="footer-contact-block__header">Phone</h5>
-                    <p class="footer-contact-block__content">
-                        <a href="tel:{{ contact:phone replace=" |"}}"
-                            >{{ contact:phone }}</a
-                        >
-                    </p>
-                </div>
-                <br />
-                <div class="footer-contact-block" data-aos="fade-up">
-                    <h5 class="footer-contact-block__header">Social</h5>
-                    <ul class="footer-contact-block__list">
-                        {{ nav:social_nav }}
-                        <li>
-                            <a href="{{ url }}">{{ title }}</a>
-                        </li>
-                        {{ /nav:social_nav }}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="column large-5">
+			<div class="footer-contacts">
+				<div class="footer-contact-block" data-aos="fade-up">
+					<h5 class="footer-contact-block__header">Email</h5>
+					<p class="footer-contact-block__content">
+						<a href="mailto:{{ contact:email }}">{{ contact:email }}</a>
+					</p>
+				</div>
+				<div class="footer-contact-block" data-aos="fade-up">
+					<h5 class="footer-contact-block__header">Phone</h5>
+					<p class="footer-contact-block__content">
+						<a href="tel:{{ contact:phone replace=" |"}}">{{ contact:phone }}</a>
+					</p>
+				</div>
+				<br/>
+				<div class="footer-contact-block" data-aos="fade-up">
+					<h5 class="footer-contact-block__header">Social</h5>
+					<ul class="footer-contact-block__list">
+						{{ nav:social_nav }}
+						<li>
+							<a href="{{ url }}">{{ title }}</a>
+						</li>
+						{{ /nav:social_nav }}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="row s-footer__bottom">
-        <div class="column large-full ss-copyright">
-            <span>{{ copyright:title }}</span>
-            <span
-                >Design by
-                <a href="{{ copyright:link }}">{{ copyright:company }}</a></span
-            >
-        </div>
+	<div class="row s-footer__bottom">
+		<div class="column large-full ss-copyright">
+			<span>{{ copyright:title }}</span>
+			<span>Design by
+				<a href="{{ copyright:link }}">{{ copyright:company }}</a>
+			</span>
+		</div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
-                </svg>
-            </a>
-        </div>
-    </div>
+		<div class="ss-go-top">
+			<a class="smoothscroll" title="Back to Top" href="#top">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+					<path d="M12 0l8 9h-6v15h-4v-15h-6z"/>
+				</svg>
+			</a>
+		</div>
+	</div>
 </footer>
