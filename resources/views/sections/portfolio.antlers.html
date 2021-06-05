@@ -4,7 +4,7 @@
 			{{ collection:sections slug:starts_with="portfolio"}}
 			<div class="section-intro" data-num="03" data-aos="fade-up">
 				<h3 class="subhead">{{ title }}</h3>
-				<h1 class="display-1">{{ extract }}</h1>
+				<h1 class="display-1">{{ extract | raw }}</h1>
 			</div>
 			{{ /collection:sections }}
 		</div>
