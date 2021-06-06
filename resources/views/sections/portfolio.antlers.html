@@ -22,7 +22,8 @@
 				<div class="folio-item__info">
 					<div class="folio-item__cat">
 						{{ category }}
-						{{ title }}
+							{{ title }}
+		                    {{ if index < category | length - 1 }} • {{ /if }}
 						{{ /category }}
 					</div>
 					<h4 class="folio-item__title">{{ title }}</h4>
