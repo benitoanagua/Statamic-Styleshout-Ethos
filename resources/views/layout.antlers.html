@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ site:short_locale }}">
-	<head>
-		<meta charset="utf-8"/>
-		<title>{{ title ?? site:name }}</title>
-		<meta name="description" content="{{ site:description | raw }}"/>
-		<meta name="author" content="{{ site:author }}"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ title ?? site:name }}</title>
+        <meta name="description" content="{{ site:description | raw }}" />
+        <meta name="author" content="{{ site:author }}" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="{{ mix src='css/site.css' }}"/>
-		<script src="{{ mix src='/js/site.js' }}"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="{{ site:apple_touch_icon }}"/>
-		<link rel="icon" type="image/png" sizes="32x32" href="{{ site:favicon_32 }}"/>
-		<link rel="icon" type="image/png" sizes="16x16" href="{{ site:favicon_16 }}"/>
-		<link rel="shortcut icon" href="{{ site:favicon }}"/>
-		<link rel="manifest" href="site.webmanifest"/>
-	</head>
-	<body id="top">
-		<div id="preloader">
-			<div id="loader" class="dots-fade">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
+        <link rel="stylesheet" href="{{ mix src='css/site.css' }}" />
+        <script src="{{ mix src='/js/site.js' }}"></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{ site:apple_touch_icon }}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{ site:favicon_32 }}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{ site:favicon_16 }}"
+        />
+        <link rel="shortcut icon" href="{{ site:favicon }}" />
+        <link rel="manifest" href="site.webmanifest" />
+    </head>
+    <body id="top">
+        <div id="preloader">
+            <div id="loader" class="dots-fade">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 
-		{{ partial:header }}
-		{{ template_content }}
-		{{ partial:footer }}
+        {{ template_content }}
 
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

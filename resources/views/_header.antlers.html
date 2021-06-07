@@ -1,23 +1,29 @@
 <header class="s-header">
-	<div class="header-logo">
-		<a href="index.html">
-			<img src="{{ site:logo }}" alt="Homepage"/>
-		</a>
-	</div>
+    <div class="header-logo">
+        <a href="{{ homepage }}">
+            <img src="{{ site:logo }}" alt="Homepage" />
+        </a>
+    </div>
 
-	<div class="header-content">
-		<nav class="row header-nav-wrap">
-			<ul class="header-nav">
-				{{ nav:main_nav }}
-				<li>
-					<a class="smoothscroll" href="{{ url }}" title="{{title}}">{{ title }}</a>
-				</li>
-				{{ /nav:main_nav }}
-			</ul>
-		</nav>
-		<a href="{{ profile:curriculum_vitae }}" class="btn btn--stroke btn--small">{{ profile:button }}</a>
-	</div>
-	<a class="header-menu-toggle" href="#0">
-		<span>Menu</span>
-	</a>
+    <div class="header-content">
+        <nav class="row header-nav-wrap">
+            <ul class="header-nav">
+                {{ nav:main_nav }}
+                <li>
+                    <a class="smoothscroll" href="{{ url }}" title="{{title}}"
+                        >{{ title }}</a
+                    >
+                </li>
+                {{ /nav:main_nav }}
+            </ul>
+        </nav>
+        <a
+            href="{{ profile:curriculum_vitae }}"
+            class="btn btn--stroke btn--small"
+            >{{ profile:button }}</a
+        >
+    </div>
+    <a class="header-menu-toggle" href="#0">
+        <span>Menu</span>
+    </a>
 </header>
